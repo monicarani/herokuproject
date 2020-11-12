@@ -1,4 +1,5 @@
 
+#This is the intents and handle page that returns the correct file by analyzing the input given.
 def get_intent(message):
     m=message.lower()
     if "-" in m:
