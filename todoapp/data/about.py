@@ -1,6 +1,8 @@
+#This the data we used for our project.
 from datetime import datetime
 time=datetime.now().hour
 
+#The time is checked and the required greet is returned.
 if(time>=6 and time<12):
     greet="Morning"
     recipe="morning"
@@ -14,6 +16,7 @@ elif(time>18 and time<=22):
     greet="Evening"
     recipe="night" 
 
+#The predefined recipes we gave according to time.
 bot ={"wish":greet,
     "morning":[{"no":1,"name":"Aloo Paratha","cost":30,"quantity":0},{"no":2,"name":"Semiya Upma","cost":35,"quantity":0},{"no":3,"name":"Masala Dosa","cost":25,"quantity":0},{"no":4,"name":"Poori","cost":20,"quantity":0},{"no":5,"name":"Idli(Sambar)","cost":20,"quantity":0},{"no":6,"name":"Vada","cost":15,"quantity":0},{"no":7,"name":"Ragi Rava Upma","cost":30,"quantity":0},{"no":8,"name":"Rava Utappam","cost":35,"quantity":0},{"no":9,"name":"Bread Omelette","cost":30,"quantity":0},{"no":10,"name":"Green Salad","cost":30,"quantity":0},{"no":11,"name":"Tea","cost":8,"quantity":0},{"no":12,"name":"Coffee","cost":7,"quantity":0}],
     "afternoon":[{"no":1,"name":"Veg Thali","cost":50,"quantity":0},{"no":2,"name":"Veg Biryani","cost":45,"quantity":0},{"no":3,"name":"Lemon Rice","cost":30,"quantity":0},{"no":4,"name":"Tomato Rice","cost":30,"quantity":0},{"no":5,"name":"Mushroom Biryani","cost":40,"quantity":0},{"no":6,"name":"Naan-Butter Paneer Masala","cost":40,"quantity":0},{"no":7,"name":"Non-Veg Thali","cost":60,"quantity":0},{"no":8,"name":"One-pot Chicken Biryani","cost":65,"quantity":0},{"no":9,"name":"Prawn Biryani","cost":70,"quantity":0},{"no":10,"name":"Curd Rice","cost":30,"quantity":0},{"no":11,"name":"Thumpsup","cost":15,"quantity":0},{"no":12,"name":"Sprite","cost":15,"quantity":0}],
@@ -21,4 +24,5 @@ bot ={"wish":greet,
     "night":[{"no":1,"name":"Tomato Soup","cost":30,"quantity":0},{"no":2,"name":"Veg corn Soup","cost":30,"quantity":0},{"no":3,"name":"Soya Salad","cost":35,"quantity":0},{"no":4,"name":"Pulka-mixed vegetable curry","cost":40,"quantity":0},{"no":5,"name":"Veg Thali","cost":50,"quantity":0},{"no":6,"name":"Vegetable Pulao","cost":45,"quantity":0},{"no":7,"name":"Chicken Fried Rice","cost":55,"quantity":0},{"no":8,"name":"Non-veg Thali","cost":60,"quantity":0},{"no":9,"name":"One-pot Mushroom Biryani","cost":50,"quantity":0},{"no":10,"name":"Curd Rice","cost":30,"quantity":0},{"no":11,"name":"Thumpsup","cost":15,"quantity":0},{"no":12,"name":"Sprite","cost":15,"quantity":0}],
     }
 
+#The recipe list is taken according to time.
 recipes={"menu":bot[recipe]}
