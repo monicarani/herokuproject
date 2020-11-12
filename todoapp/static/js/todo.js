@@ -1,3 +1,4 @@
+//The only function we used to process the input provided by the user.
 $(function(){
     send_response = function(prop){
         let val=$('#userinput').val()
