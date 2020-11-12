@@ -1,3 +1,4 @@
+#This is the main page from where everything starts.
 from flask import Flask,request,render_template
 app = Flask(__name__)
 
