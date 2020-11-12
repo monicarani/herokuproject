@@ -1,0 +1,12 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+    <p>Good {{bot.wish}} {{(data.message).upper()}}. <br>
+    Nice to see you here. <br>
+    This is the menu we offer at this time...<br>
+    <hr>
+    <ul>
+        {% for item in recipes.menu %}
+        <li>{{item.no}}. {{item.name}} ----->  Rs.{{item.cost}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

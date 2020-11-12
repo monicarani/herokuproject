@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILAC VOLTA🍽️</title>
+    <link rel="icon" type="image/jpg" href="https://p7.hiclipart.com/preview/151/368/987/table-computer-icons-restaurant-dinner.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}"></link>
+</head>
+<body>
+    <div class="header">
+        <img class="mainimg" src="https://st2.depositphotos.com/3577609/11835/v/950/depositphotos_118355644-stock-illustration-restaurant-logo-design.jpg" alt="mainimg">
+        <h3>Hiii...</h3>
+        <h3>Welcome to</h3>
+        <h2>LILAC-VOLTA</h2>
+        <h3>Restaurant</h3>
+        <h4><img class="botimg" src="https://ascend.digital/wp-content/uploads/Restaurant-Chatbot.jpg" alt="bot">I am the bot of LILAC-VOLTA..to give you information about the menu here<img class="botimg" src="https://ascend.digital/wp-content/uploads/Restaurant-Chatbot.jpg" alt="bot"></h4>
+        <h5>Hope you feel exited talking to me !!!</h5>
+    </div>
+    <main id="chat">
+        <main class="container">
+            {% block content %}{% endblock %}
+        </main>
+    </main>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/todo.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+    <p>
+        Each item is given ID <br>
+        Example : '1. Aloo Paratha -----> Rs.30'<br>
+        Here '1' is ID. <br>
+        Please enter the recipe you want in form of 'ID of recipe-Quantity' like <br>
+        " 1-2 " (without quotes) <br>
+        It means '2 plates of Aloo Paratha'.
+    </p>
+    <p>
+        Enter all the order at once separating each one with comma(,) <br>
+        Example : "1-2,2-3,4-1"  (without quotes) <br>
+        Don't add any other punctuation or text. <br>
+        Mention the whole order once. 
+    </p>
+{% endblock %}

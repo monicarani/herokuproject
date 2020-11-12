@@ -1,0 +1,9 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+    Thanks for the feedback. <br>
+    {% if (data>=1 and data<=3) %}
+        I wish next time you would feel more comfortable.
+    {% else %}
+        Seems you have enjoyed using me.
+    {% endif %}
+{% endblock %}

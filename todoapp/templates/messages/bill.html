@@ -1,0 +1,17 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+    <p>
+        This is the order you gave...
+    </p>
+    <hr>
+    <ul>
+        {% for item in recipes.menu %}
+            {% if item.quantity>0 %}
+                <li>{{item.no}}. {{item.name}} --- {{item.quantity}} * Rs.{{item.cost}} ===> Rs.{{item.quantity*item.cost}} </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <hr>
+    <hr>
+    The total bill is : Rs.{{sum}}
+{% endblock %}
