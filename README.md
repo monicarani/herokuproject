@@ -17,7 +17,7 @@
 ***Our bot greets the customer who comes to a hotel and asks for his/her name. It displays the menu according to time. It asks to type the order in the form of "ID OF RECIPE - QUANTITY ". After typing "done" , it shows the bill and provide a link to pay it (We are giving a rough link here). After the money transfer it asks for the feedback and thank the customer.***
 
 ###### Flowchart :
-https://github.com/monicarani/herokuproject/blob/main/botflowchat.jpeg
+![](https://github.com/monicarani/herokuproject/blob/main/botflowchat.jpeg)
 ###### Youtube Link of demo :
 
 ###### Our HEROKU Link of project :
